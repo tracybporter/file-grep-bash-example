@@ -15,7 +15,10 @@ Ultimately Miles using python pandas proved both maintainable and performant.
 1. Get code.  
     1. Clone this repository   
 1. Run tests.   
-    1. Open terminal windowMake sure you can run the test-search-no-mocking.sh and get no errors   
+    1. Open terminal window
+    1. Navigate to the root directory of the repo
+    1. Execute the test script: `./test-search-no-mocking.sh`
+    1. Confirm both tests methods run successfully.   
 1. Run the script with your files.   
     1. **master.txt**: Replace the test master.txt with your list of unique matching patterns (e.g. serial numbers)   
     1. **data-files directory**: Replace all the files in this directory. The names of the files is NOT important.   
