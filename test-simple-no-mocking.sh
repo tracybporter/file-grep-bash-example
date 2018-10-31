@@ -2,8 +2,10 @@
 ### Rather than roll my own, if I was really serious about bash script testing I'd dig further into https://github.com/sstephenson/bats
 
 #setup spec
-sh ./simple.sh > testing-output.txt
+printf "\n\nTESTING simple.sh\n"
+sh ./simple.sh > testing-simple-output.txt
 
+# --------------------
 printf "\nFound the correct number of rows\n"
 #given
 expectedRowCount=1
@@ -20,6 +22,7 @@ else
     exit 1
 fi
 
+# --------------------
 printf "\nFound the correct row\n"
 #given
 row1="f2,2,num2002,more,stuff"
