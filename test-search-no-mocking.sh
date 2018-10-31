@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
+### Rather than roll my own, if I was really serious about bash script testing I'd dig further into https://github.com/sstephenson/bats
 
 printf "\nFound the correct number of rows\n"
 #given
-expectedRowCount=1
+expectedRowCount=3
 
 #when
-sh ./simple.sh > testing-output.txt
+sh ./search-all-data-files.sh > testing-output.txt
 actualRowCount=(`wc testing-output.txt`)
 
 #then
