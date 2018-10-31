@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 ### Rather than roll my own, if I was really serious about bash script testing I'd dig further into https://github.com/sstephenson/bats
 
-#setup spec
 printf "\n\nTESTING simple.sh\n"
-sh ./simple.sh > testing-simple-output.txt
+
+#setup spec
+outputFile=testing-simple-output.txt
+rm -f $outputFile
+sh ./simple.sh > $outputFile
 
 # --------------------
 printf "\nFound the correct number of rows\n"
@@ -11,7 +14,7 @@ printf "\nFound the correct number of rows\n"
 expectedRowCount=1
 
 #when
-actualRowCount=(`wc testing-output.txt`)
+actualRowCount=(`wc $outputFile`)
 
 #then
 if [ $actualRowCount = $expectedRowCount ]
@@ -28,7 +31,7 @@ printf "\nFound the correct row\n"
 row1="f2,2,num2002,more,stuff"
 
 #expects
-if grep -Fxq $row1 testing-output.txt
+if grep -Fxq $row1 $outputFile
 then
     echo " Success"
 else
