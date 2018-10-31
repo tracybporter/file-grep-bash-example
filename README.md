@@ -1,1 +1,1 @@
-This came from a before 6:30am before my first cup of coffee with my husband one morning. I qualify this because if we'd discussed it later I hopefully would have suggested something other than a bash script. HOWEVER, grep is pretty damn effective.
+This came from a before 6:30am before-my-first-cup-of-coffee conversation with my husband one morning. I qualify this because if we'd discussed it later I hopefully would have suggested something other than a bash script. HOWEVER, grep is pretty damn effective.
