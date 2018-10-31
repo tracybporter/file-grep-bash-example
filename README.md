@@ -21,5 +21,5 @@ Ultimately Miles using python pandas proved both maintainable and performant.
     1. Confirm both tests methods run successfully.   
 1. Run the script with your files.   
     1. **master.txt**: Replace the test master.txt with your list of unique matching patterns (e.g. serial numbers)   
-    1. **data-files directory**: Replace all the files in this directory. The names of the files is NOT important.   
+    1. **data-files directory**: Replace all the files in this directory. The filenames MUST have a `.txt` extension.   
     1. Execute the script: `./search-all-data-files.sh > matching-rows.txt`
