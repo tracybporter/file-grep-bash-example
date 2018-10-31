@@ -1,5 +1,5 @@
 #!/bin/bash
 
 while read mr; do
-  grep $mr data-files/file2.txt
+  grep --no-filename $mr data-files/*.txt
 done < master.txt
